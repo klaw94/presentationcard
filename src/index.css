@@ -7,7 +7,159 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body{
+  background-color: #23252C;
+  font-family: 'Inter', serif;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App{
+  display: block;
+  background-color: #1A1B21;
+  width: 317px;
+  height: 780px;
+  margin: 0 auto;
+  margin-top: 44px;
+  margin-bottom: 100px;
+  color: white;
+  border-radius: 8px;
+  border: 1px solid #1A1B21;
+}
+
+.myPic{
+  width: 317px;
+  height: 317px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.myName{
+  font:25px;
+  font-weight: 700;
+  margin-top: 21px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.myJob{
+  color: #F3BF99;
+  font-size: 14px;
+  margin-top: 3px;
+  font-weight: 400;
+}
+
+.myWeb{
+  font-size: 11px;
+  text-decoration: none;
+  color: #F5F5F5;
+  margin-top: 10px;
+}
+
+.myWeb:hover{
+  text-decoration: underline;
+}
+
+.buttonsDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+  margin-left: 35px;
+  margin-right: 35px;
+
+}
+
+.buttonIcon{
+  height: 13px;
+}
+
+.buttonEmail, .buttonLinkedin{
+  margin-top: 20px;
+  height: 34px;
+  width: 115px;
+  border-radius: 6px;
+  font-weight: medium;
+  font-size: 14px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  transition: 150ms ease-in-out;
+  cursor: pointer;
+}
+
+.buttonEmail{
+  background-color: #D1D5DB;
+  border: 2px solid #D1D5DB;
+
+}
+
+.buttonLinkedin{
+  background-color: rgba(80, 147, 226, 1);
+  border: 2px solid rgba(80, 147, 226, 1);
+  color: white;
+}
+
+.buttonIcon{
+  padding-right: 10px;
+  height: 16px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.buttonEmail:hover{
+  color: white;
+  background: black;
+}
+
+.buttonLinkedin:hover{
+  color: rgba(80, 147, 226, 1);
+  background: white;
+}
+
+.buttonLinkedin:hover > img{
+   content:url("./Images/linkedinhover.png");
+
+}
+
+.contentTitle{
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  margin: 30px 35px 0 35px;
+}
+
+.contentText{
+  font-size: 10px;
+  text-align: left;
+  margin: 5px 35px -5px 35px;
+  line-height: 15.36px;
+}
+
+.footerDiv{
+  display: flex;
+  width: 317px;
+  height: 64px;
+  background-color: rgba(22, 22, 25, 1);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-top: 50px;
+  justify-content: center; 
+}
+
+.fbA, .twitterA, .instaA{
+  width: 25px; 
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.fbIcon, .twitterIcon, .instaIcon{
+  width: 25px;
+  flex-direction: row;
+}
+
+.fbIcon:hover, .twitterIcon:hover, .instaIcon:hover{
+  border:2px solid rgba(80, 147, 226, 1);
+  border-radius: 50%;
 }
