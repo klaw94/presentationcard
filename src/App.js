@@ -6,6 +6,7 @@ import Info from "./Components/Info"
 import Interests from "./Components/Interest"
 
 function App() {
+  
   return (
     <div className="App">
       <Info />
